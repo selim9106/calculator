@@ -1,0 +1,32 @@
+:root {
+    --cultured: #F3F4F7;
+    
+    --lavender-gray: #C3C8D5;
+    --light-steel-blue: #AEBBD6;
+    /* --caded-blue-crayola: #A9B0C6; */
+    --queen-blue: #446288;
+    --bdazzled-blue: #3E587A;
+    --y-in-mn-blue: #3C4F76;
+    --charcoal: #383F51;
+    --raisin-black: #212531;
+    --prussian-blue: #223144;
+    --rich-black-fogra: #1C2636;
+    
+    --piggy-pink: #F7DEE5;
+    --rubine-red: #CA2E55;
+    --armanda-purple: #A4284D;
+    --claret: #83203E;
+    
+    
+    --isabelline: #F7F4F2;
+    --timberwolf: #E0D4CC;
+    --pale-silver: #D1BEB0;
+    --quick-silver: #AB9F9D;
+    --cinereous: #917878;
+    --deep-taupe: #7B6565;
+    --dark-liver-horses: #4C392F;
+
+}
+
+/* //about inner shadow : https://stackoverflow.com/questions/71862913/how-to-apply-inset-to-box-shadow-in-tailwindcss */
+/* // https://tailwind.build/classes/shadows/shadow-inner  */
