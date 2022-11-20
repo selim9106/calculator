@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"  />
     <!-- ! change Vite icon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <!-- todo take off CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body class="flex bg-slate-800 h-screen p-4 m-auto">
-    <main id="app" class="bg-gradient-to-b from-stone-700 to-stone-500 rounded-3xl min-h-fit max-h-full m-auto shadow-[inset_0_-5px_20px_rgba(0,0,0,0.6)] sm:w-10/12 md:w-4/6 lg:w-sm lg:max-w-sm lg:max-h-full">
+    <main id="app" class="w-full bg-gradient-to-b from-stone-700 to-stone-500 rounded-3xl min-h-fit max-h-full m-auto shadow-[inset_0_-5px_20px_rgba(0,0,0,0.6)] sm:w-10/12 md:w-4/6 lg:w-sm lg:max-w-sm lg:max-h-full">
 
       <!-- calculator -->
-      <div id ="calculator" class="grid grid-rows p-8 h-min sm:p-12 sm:justify-items-center lg:p-6">
+      <!-- <div id ="calculator" class="grid grid-rows p-8 h-min sm:p-12 sm:justify-items-center lg:p-6">
 
-        <!-- screen -->
+        * screen
         <section class="self-center flex flex-col justify-end items-end bg-stone-300 rounded-xl max-h-[20vh] pt-4 px-4 pb-2 shadow-md opacity-70 sm:h-[20vh] lg:px-2">
-          <!-- historic -->
+          ? historic
           <p class="font-mono font-medium slashed-zero text-base text-right text-stone-500 align-text-bottom overflow-auto sm:text-xl lg:text-base lg:pr-1">12+80+(422x3) 12+80+(422x3) 12+80+(422x3) 12+80+(422x3) 12+80+(422x3) 12+80+(422x3) 12+80+(422x3) 12+80+(422x3) 79863785839876900967986</p>
-          <!-- calc -->
+          ? calc
           <p class="font-mono font-semibold text-right text-xl sm:text-2xl lg:text-xl lg:leading-tight lg:mx-4">12+870</p>
-          <!-- result -->
+          ? result
           <p class="font-mono font-bold text-right text-2xl sm:text-3xl lg:text-2xl lg:leading-none lg:mx-4">124.80</p>        
         </section>
 
 
-        <!-- All buttons -->
+        * All buttons
         <section class="grid grid-cols-4 gap-4 mt-2 pt-4 sm:gap-y-4 sm:pt-8 sm:w-11/12 sm:justify-items-stretch lg:pt-4 lg:gap-2">
 
+          ? special buttons
           <div class="grid grid-cols-4 gap-4 col-span-4 sm:justify-items-center lg:gap-2">
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-stone-400 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-xl text-neutral-900 font-bold hover:ring ring-neutral-50 ring-offset focus:text-zinc-300 sm:h-28 sm:text-3xl lg:h-16 lg:text-2xl">(</button>
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-stone-400 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-xl text-neutral-900 font-bold hover:ring ring-neutral-50 ring-offset focus:text-zinc-300 sm:h-28 sm:text-3xl lg:h-16 lg:text-2xl">)</button>
@@ -36,6 +37,7 @@
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-stone-400 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-xl text-neutral-900 font-bold hover:ring ring-neutral-50 ring-offset focus:text-zinc-300 sm:h-28 sm:text-3xl lg:h-16 lg:text-2xl">C</button>
           </div>
 
+          ? num buttons
           <div class="grid grid-cols-3 col-span-3 gap-4 sm:justify-items-center lg:gap-2">
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-stone-400 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-xl text-neutral-900 font-bold hover:ring ring-neutral-50 ring-offset focus:text-zinc-300 sm:h-28 sm:text-3xl lg:h-16 lg:text-2xl">7</button>
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-stone-400 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-xl text-neutral-900 font-bold hover:ring ring-neutral-50 ring-offset focus:text-zinc-300 sm:h-28 sm:text-3xl lg:h-16 lg:text-2xl">8</button>
@@ -51,6 +53,7 @@
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-stone-400 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-2xl text-neutral-900 font-black hover:ring ring-neutral-50 ring-offset focus:text-zinc-300 sm:h-28 sm:text-4xl lg:h-16 lg:text-3xl">=</button>
           </div>
 
+          ? operation buttons
           <div class="grid grid-cols-1 gap-4 sm:justify-items-center lg:gap-2">
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-neutral-800 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-xl text-stone-100 font-semibold hover:ring ring-neutral-50 ring-offset focus:text-amber-600 sm:h-28 sm:text-3xl lg:h-16 lg:text-2xl lg:font-semibold">÷</button>
             <button class="min-h-12 max-h-20 aspect-square rounded-xl bg-neutral-800 drop-shadow-sm shadow-[inset_0_-1px_3px_rgba(0,0,0,0.5)] text-xl text-stone-100 font-semibold hover:ring ring-neutral-50 ring-offset focus:text-amber-600 sm:h-28 sm:text-3xl lg:h-16 lg:text-xl lg:font-semibold">x</button>
@@ -59,9 +62,9 @@
           </div>
           
         </section>
-      </div>
+      </div> -->
     </main>
     <!-- todo: uncomment script -->
-    <!-- <script type="module" src="/main.js"></script> -->
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

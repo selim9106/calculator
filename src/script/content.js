@@ -1,26 +1,3 @@
-// export class Element {
-//     constructor(tagName, className, Id, dataType, textContent) {
-//         this.tagName = tagName;
-//         // ! update class with a function to add talwind utilitaries
-//         this.className = className;
-//         this.Id = Id;
-//         this.dataType = dataType;
-//         this.textContent = textContent;
-//      }  
-//         createElement() {
-//         let element = document.createElement(this.tagName);
-//         element.setAttribute("class", this.className);
-//         
-//         if (this.dataType && this.dataType != "") element.setAttribute("dataType", this.dataType);
-//         if (this.textContent && this.textContent != "") element.innerText = this.textContent;
-//         return element;
-    
-//      } insertElement(parent) {
-//         let element = this.createElement();
-//         parent.appendChild(element);
-//      }
-// }
-
 export class Element {
     constructor(tagName, className) {
         this.tagName = tagName;
@@ -45,40 +22,20 @@ export class textElement extends Element {
         super(tagname, className);
         this.Id = Id;
     }
+    setText(text) {
+        this.Text = text;
+    }
+    setDataType(datatype) {
+        this.dataType = datatype;
+    }
     createElt() {
         let element = document.createElement(this.tagName);
         element.setAttribute("class", this.className);
         if (this.Id && this.Id != "") element.setAttribute("id", this.Id);
+        // ! innerHTML required to display Unicode (innerText does NOT)
+        if (this.Text && this.Text != "") element.innerHTML = this.Text;
+        if (this.dataType && this.dataType != "") element.setAttribute("data-type", this.dataType);
         return element
     }
-    setText(text) {
-        let element = this.createElement();
-        element.innerText = text;
-        // this.textContent = text;
-    }
-    
 }
-
-
-// this.textContent = textContent;
-// this.dataType = dataType;
-// if (this.dataType && this.dataType != "") element.setAttribute("dataType", this.dataType);
-    
-// function setClass(class) {
-//     return class
-// }
-
-// export function createElement(tagName, className, Id, textContent, dataType) {
-//     this.tagName = tagName;
-//     // ! update class with a function to add talwind utilitaries
-//     // this.className = className;
-//     this.Id = Id;
-//     this.textContent = textContent;
-//     this.dataType = dataType;
-// }
-
-// createElement.prototype.setClass = function(classes) {
-//     return this.className = classes;
-// }
-
 

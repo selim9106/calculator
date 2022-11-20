@@ -50,4 +50,5 @@ module.exports = {
 }
 
 
-// info: about radial gradient with tailwind https://play.tailwindcss.com/fBVvvF0Phn
+// info: about radial gradient with tailwind https://play.tailwindcss.com/kQvzcR8OF8
+// // https://github.com/tailwindlabs/tailwindcss/discussions/2599
